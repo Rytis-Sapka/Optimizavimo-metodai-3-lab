@@ -1,0 +1,26 @@
+S = abh
+f(x) = -abh
+g0(x) = -a
+g1(x) = -b
+g2(x) = -h
+g3(x) = 2ab + 2ah + 2bh - 1
+
+b(x, r) = -abh + (1 / r) (max(0, -a)^2 + max(0, -b)^2 + max(0, -h)^2 + (2ab + 2ah + 2bh - 1)^2)
+
+nuo x:
+if (x < 0)
+ -yz + (2x+8xyy+16xyz+8xzz+8yyz+8yzz-4y-4z) / r
+else
+ -yz + (8xyy+16xyz+8xzz+8yyz+8yzz-4y-4z) / r
+
+nuo y:
+if (y < 0)
+ -xz + (2y+8xxy+8xxz+8yzz+16xyz+8xzz-4x-4z) / r
+else
+ -xz + (8xxy+8xxz+8yzz+16xyz+8xzz-4x-4z) / r
+
+nuo z:
+if (z < 0)
+ -xy + (2z+8xxy+8xxz+8yyz+8xyy+16xyz-4x-4y) / r
+else
+ -xy + (8xxy+8xxz+8yyz+8xyy+16xyz-4x-4y) / r
